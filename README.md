@@ -28,10 +28,11 @@ const getPoints = require('lsvggg');
   }
 ```
 
-<h4>使用方法</h4>
-##### 左键点击
+### 使用方法
 
-##### space生成svg
+##### 左键点击生成svg点位
+
+##### space根据点位绘制svg
 
 ##### enter结束当前svg绘制,进入下一个svg绘制，步骤同上.
 
