@@ -1,6 +1,6 @@
 # lsvggg
 
-# 基于vue3.0简易svg点位生成器
+# 简易原生JSsvg点位生成器
 
 ##### 练习npm工具更新，dom，svg和事件监听。
 
