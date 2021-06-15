@@ -13,6 +13,6 @@
       getPoinits(events)
     }
   }
-<h3>使用方法</h3>
+<h4>使用方法</h4>
 左键点击，space生成svg，enter结束当前svg绘制,进入下一个svg绘制，步骤同上.
 esc导出点位
