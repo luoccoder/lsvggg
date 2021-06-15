@@ -4,7 +4,7 @@
 <h2>安装 npm i lsvggg</h2>
 <h2>起始配置</h2>
 <h4>template区域</h4>
-  指定元素监听click
+  指定元素click事件执行方法
 <h4>script区域</h4>
   const getPoints = require('lsvggg');
   
