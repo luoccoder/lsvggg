@@ -1,11 +1,12 @@
+let drawPoints=[];
+let cachePoints='';
+let isNext=false;
+let mainBox='';
+let bsvg='';
+let isStart=false;
+let isCurrentEnd=false;
 function getPoints(event){
-  let drawPoints=[];
-  let cachePoints='';
-  let isNext=false;
-  let mainBox='';
-  let bsvg='';
-  let isStart=false;
-  let isCurrentEnd=false;
+
   let e = event || window.event ;
 
   let mouseClick=(event)=>{};
@@ -40,7 +41,11 @@ function getPoints(event){
     }
     if(e.keyCode==27){
       let urlObject = window.URL || window.webkitURL || window;
-      let export_blob = new Blob([drawPoints]);
+      let text=``;
+      for(let p of drawPoints){
+        text+=`${p}\n`
+      }
+      let export_blob = new Blob([text]);
       let save_link = document.createElementNS("http://www.w3.org/1999/xhtml", "a")
       save_link.href = urlObject.createObjectURL(export_blob);
       save_link.download = 'name';
@@ -60,7 +65,6 @@ function getPoints(event){
   }
   if(!isNext){
     cachePoints+=`${e.pageX},${e.pageY} `;
-    console.log(cachePoints);
   };
   window.addEventListener('click',mouseClick);
   window.addEventListener('mousemove',mouseMove);
