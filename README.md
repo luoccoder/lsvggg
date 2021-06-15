@@ -4,7 +4,7 @@
 <h2>安装 npm i lsvggg</h2>
 <h2>起始配置</h2>
 <h4>template区域</h4>
-<div @click='方法'></div>
+'<div @click='方法'></div>'
 
 <h4>script区域</h4>
   const getPoints = require('lsvggg');
