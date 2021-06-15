@@ -1,6 +1,6 @@
 # lsvggg
 
-# 简易原生JSsvg点位生成器
+# 原生JS实现简易svg点位生成器
 
 ##### 练习npm工具更新，dom，svg和事件监听。
 
